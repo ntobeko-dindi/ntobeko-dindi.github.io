@@ -1,0 +1,481 @@
+/*base rules*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Times New Roman", Times, serif;
+}
+p {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+  line-height: 30px;
+  color: #454647;
+}
+
+.universal-padding {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/*custom navigation bar style*/
+
+nav .custom-nav-style {
+  background: transparent;
+  padding: 20px 0px;
+  transition: 0.8s all;
+}
+
+nav .navbar-brand-name {
+  font-size: 30px;
+  color: #fff;
+  transition: 0.8s all;
+  font-family: FontAwesome;
+  font-weight: bolder;
+  text-decoration: none;
+  letter-spacing: -10px;
+}
+
+nav .navbar-nav li a {
+  color: rgba(255, 255, 255, 0.8) !important;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+
+nav .navbar-nav li a:hover {
+  text-transform: uppercase;
+}
+
+nav .navbar-nav li a:active {
+  color: #ee8663 !important;
+}
+
+nav .navbar-nav li {
+  margin-left: 15px;
+}
+
+nav.custom-nav-style.addsticky {
+  background: #fff !important;
+  padding: 0px;
+  box-shadow: 0 1px 8px 3px rgba(0, 0, 0, 0.05);
+  transition: 0.8s all ease-in-out;
+}
+
+nav.addsticky .navbar-brand-name {
+  color: #000;
+  font-size: 40px;
+  transition: 0.8s all;
+  letter-spacing: -13px;
+  margin-left: 20px;
+}
+
+nav.addsticky .navbar-nav .nav-link {
+  color: #000 !important;
+}
+
+.navbar .hamburger {
+  color: #fff;
+  width: 40px;
+  height: 40px;
+}
+
+nav.addsticky .hamburger {
+  color: #000;
+}
+
+/*header section*/
+
+header {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../images/background.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-box {
+  max-width: 700px;
+  color: #fff;
+}
+
+.content-box h4 {
+  font-size: 30px;
+}
+
+.content-box h1 {
+  font-size: 52px;
+}
+
+.content-box a {
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  padding: 5px 25px;
+}
+
+.content-box a:hover {
+  color: #000;
+  background: #fff;
+  transition: 0.8 all;
+}
+
+.content-box p {
+  color: #fff;
+}
+
+.element {
+  color: #ee8663;
+}
+.intro {
+  font-size: 20px;
+}
+
+/* About */
+
+.socials {
+  width: 34px;
+  height: 34px;
+  border: 2px solid rgb(180, 175, 175);
+  border-radius: 50%;
+  transition: 0.8s linear;
+  padding: 5px;
+}
+
+.social-links {
+  text-align: center;
+}
+
+.about h2 {
+  color: #000;
+}
+
+.socials:hover {
+  height: 44px;
+  transition: 0.8s;
+  width: 44px;
+}
+
+.profile {
+  width: inherit;
+  height: inherit;
+  border-radius: 20px;
+}
+
+/*projects and experience section*/
+
+.progress-bar {
+  background-color: #ee8663 !important;
+}
+
+.experience h3 {
+  font-weight: bolder;
+  font-size: 34px;
+}
+.experience label {
+  font-size: 20px;
+  margin: 10px 0px 0px 10px;
+}
+
+.skills {
+  font-size: 20px;
+  font-weight: lighter !important;
+  line-height: 1.6;
+  font-family: Cambria;
+}
+
+.skills {
+  animation: skills;
+  transition: 3s all;
+}
+
+/*services*/
+
+.services-bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(../images/service-bg.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card,
+.card-header {
+  background: #f7f7f7 !important;
+  border-radius: 20px !important;
+}
+
+.card-header {
+  border: none !important;
+}
+
+.service-header p,
+h2 {
+  color: #f7f7f7;
+  font-weight: bolder;
+}
+
+.service-header h2 {
+  font-size: 42px;
+}
+.service-header p {
+  font-size: 24px;
+}
+
+.services-border {
+  height: 3px;
+  width: 60px;
+  margin: 15px auto;
+  background: #ee8663;
+}
+
+.services .card-header img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+/* hire me section */
+.hire-btn {
+  font-weight: bold;
+  color: #ee8663;
+  text-decoration: none;
+  background: #fff;
+  border: 2px solid #ee8663;
+  border-radius: 20px;
+  padding: 5px 25px;
+}
+.hire-btn:hover {
+  color: #fff;
+  background-color: #ee8663;
+}
+
+/* contact us form styling */
+
+#email-logo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: auto;
+}
+
+#email-logo:hover {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  transition: 0.8s all;
+}
+.contact h3,
+h5,
+h6,
+#email-id {
+  margin: auto;
+  margin-top: 10px;
+  font-family: sans-serif;
+}
+
+#email-id {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid rgb(180, 175, 175);
+}
+#email-id:hover {
+  width: 50px;
+  height: 50px;
+  transition: 0.8s all;
+}
+
+.text-field {
+  border: 2px solid rgb(180, 175, 175);
+  border-radius: 10px;
+  font-family: sans-serif;
+  color: #000;
+  font-weight: normal;
+}
+
+#status {
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+  font-weight: bolder;
+  font-size: 20px;
+  font-family: sans-serif;
+  color: #fff;
+  letter-spacing: 3px;
+}
+
+#status.success {
+  background: rgb(0, 255, 0);
+  animation: status 4s ease forwards;
+}
+
+#status.error {
+  background: rgb(255, 0, 0);
+  animation: status 4s ease forwards;
+}
+
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+/* footer section style */
+.footer {
+  background: rgba(0, 0, 0, 0.8);
+  height: 200px;
+}
+.footer ul {
+  height: 85px;
+}
+
+.footer img {
+  margin-top: 50px;
+  width: 34px;
+  height: 34px;
+  border-radius: 5%;
+}
+.footer-text {
+  color: #f7f7f7;
+}
+
+.footer-hr {
+  background: #ee8663;
+}
+
+.footer-brand-name {
+  font-size: 15px;
+  color: #ee8663;
+  font-family: FontAwesome;
+  font-weight: 900;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+/* 
+
+
+
+
+POPUP MODEL
+
+
+
+
+
+*/
+
+/* Center the image and position
+the close button */
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 30%;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-top: 300px;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  border: 1px solid #888;
+  width: 60%;
+}
+
+/* The Close Button (x) */
+
+.close {
+  position: absolute;
+  right: -0px;
+  top: -24px;
+  color: #000;
+  font-size: 40px;
+  font-weight: bolder;
+  background-color: #ff4000;
+  border-top-right-radius: 4px;
+  width: 40px;
+  height: 40px;
+  margin: auto;
+}
+
+.close:hover,
+.close:focus {
+  background-color: #ff4000;
+  cursor: pointer;
+  color: white;
+}
+
+/* Add Zoom Animation */
+
+.animate {
+  -webkit-animation: animatezoom 0.8s;
+  animation: animatezoom 0.8s;
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
