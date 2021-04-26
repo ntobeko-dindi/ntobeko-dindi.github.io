@@ -70,22 +70,6 @@ $(document).ready(function(){
         startDelay:100,
     });
 
-    //progress bar animation
-    // var waypoint = new Waypoint({
-    //     element:document.getElementById('.experienceId'),
-    //     handler: function(){
-    //         var progress = document.querySelectorAll('.progress-bar');
-    //         progress[0].setAttribute("style","width:95%;transition:1s all");
-    //         progress[1].setAttribute("style","width:92%;transition:1.5s all");
-    //         progress[2].setAttribute("style","width:90%;transition:2s all");
-    //         progress[3].setAttribute("style","width:83%;transition:2.5s all");
-    //         progress[4].setAttribute("style","width:85%;transition:3.0s all");
-    //         progress[5].setAttribute("style","width:97%;transition:3.5s all");
-    //         progress[6].setAttribute("style","width:75%;transition:4.0s all");
-    //         },
-    //         offset:'90%'
-    // });
-
     var progress = document.querySelectorAll('.progress-bar');
     progress[0].setAttribute("style","width:95%;transition:1s all");
     progress[1].setAttribute("style","width:92%;transition:1.5s all");
@@ -100,9 +84,8 @@ var form = document.getElementById("my-form");
     
     async function handleSubmit(event) {
       event.preventDefault();
-      var status = document.getElementById("my-form-status");
+      var status = document.getElementById("status");
       var data = new FormData(event.target);
-      document.getElementById('id01').style.display='block';
       fetch(event.target.action, {
         method: form.method,
         body: data,
@@ -111,13 +94,11 @@ var form = document.getElementById("my-form");
         }
       }).then(response => {
           status.classList.add('success')
-        status.innerHTML = "Thanks!";
-        //document.getElementById('id01').style.display='block'
+          status.innerHTML = "Thanks!";
         form.reset()
       }).catch(error => {
         status.classList.add('error')
         status.innerHTML = "Oops! There was a problem submitting your form"
-        //document.getElementById('id01').style.display='block'
       });
     }
     form.addEventListener("submit", handleSubmit)
