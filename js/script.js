@@ -100,7 +100,7 @@ var form = document.getElementById("my-form");
     
     async function handleSubmit(event) {
       event.preventDefault();
-      var status = document.getElementById("my-form-status");
+      var status = document.getElementById("status");
       var data = new FormData(event.target);
       //document.getElementById('id01').style.display='block';
       fetch(event.target.action, {
@@ -111,11 +111,11 @@ var form = document.getElementById("my-form");
         }
       }).then(response => {
           status.classList.add('success')
-        status.innerHTML = "Thanks!";
+          status.innerHTML = "Thanks!";
         //document.getElementById('id01').style.display='block'
         form.reset()
       }).catch(error => {
-        //status.classList.add('error')
+        status.classList.add('error')
         status.innerHTML = "Oops! There was a problem submitting your form"
         //document.getElementById('id01').style.display='block'
       });
