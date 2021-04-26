@@ -102,7 +102,7 @@ var form = document.getElementById("my-form");
       event.preventDefault();
       var status = document.getElementById("my-form-status");
       var data = new FormData(event.target);
-      document.getElementById('id01').style.display='block';
+      //document.getElementById('id01').style.display='block';
       fetch(event.target.action, {
         method: form.method,
         body: data,
@@ -115,7 +115,7 @@ var form = document.getElementById("my-form");
         //document.getElementById('id01').style.display='block'
         form.reset()
       }).catch(error => {
-        status.classList.add('error')
+        //status.classList.add('error')
         status.innerHTML = "Oops! There was a problem submitting your form"
         //document.getElementById('id01').style.display='block'
       });
