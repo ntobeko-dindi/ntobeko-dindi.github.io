@@ -265,6 +265,14 @@ h2 {
   background-color: #ee8663;
 }
 
+/* blog section */
+
+#blogId {
+  color: #000 !important;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
 /* contact us form styling */
 
 #email-logo {
