@@ -506,3 +506,8 @@ border: 0.15rem solid #ee8663;
 border-radius: 100vw;
 margin-block: .35em;
 }
+@supports(scrollbar-color:#ee8663 white){
+*{
+  scrollbar-color:#ee8663 white;
+}
+}
