@@ -397,7 +397,11 @@
           </ul>
           <hr class="ml-4 mr-4 footer-hr">
           <div class="footer-text text-center mt-6">
-            &copy; copyright <div class="footer-brand-name">Ntobeko Dindi</div> | All rights reserved.
+            &copy; 
+          <span id="copyright">
+              <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+          </span>
+            <div class="footer-brand-name">Ntobeko Dindi</div> | All rights reserved.
           </div>
       </section>
 
