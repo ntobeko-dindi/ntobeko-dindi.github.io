@@ -78,6 +78,21 @@ $(document).ready(function(){
     progress[4].setAttribute("style","width:85%;transition:3.0s all");
     progress[5].setAttribute("style","width:97%;transition:3.5s all");
     progress[6].setAttribute("style","width:75%;transition:4.0s all");
+
+    $("a").on('click', function(event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+    
+          var hash = this.hash;
+    
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 1000, function(){
+    
+            window.location.hash = hash;
+          });
+        }
+      });
 });
 
 var form = document.getElementById("my-form");
