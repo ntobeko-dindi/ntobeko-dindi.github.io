@@ -13,10 +13,11 @@
   </head>
   <body>
 
+    <section id="homeId"></section>
         <!--navigation section-->
     <nav class="navbar navbar-expand-lg sticky fixed-top custom-nav-style">
       <div class="container">
-        <a href="#"  id="navbar-brand-nameId" class="navbar-brand-name">NDX</a>
+        <a href="#homeId"  id="navbar-brand-nameId" class="navbar-brand-name">NDX</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -36,7 +37,7 @@
         <div class="collapse navbar-collapse" id="navbarId">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a href="#" class="nav-link">Home</a>
+              <a href="#homeId" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
               <a href="#about" class="nav-link">About</a>
@@ -64,7 +65,7 @@
               <h4>Welcome</h4>
               <h1>I Am <span class="element">Ntobeko Dindi</span></h1>
               <span class="intro">
-                Not your typical software developer, from web to mobile, iOS to android, front-end to back-end I’m your guy, if you want the best man for the job contact me or download my CV below.
+                Not your typical software developer, from web to mobile, iOS to android, front-end to back-end I'm your guy, if you want the best man for the job contact me or download my CV below.
               </span>
               <p></p>
               <a href="#" class="btn" >Download CV</a>
@@ -148,7 +149,7 @@
             <h3>My Skills</h3>
           
             <h6 class="skills col-md-11">
-              I’m what you’d call a jack of all trade but my main area of interest and passion is mobile development. In my spare time I do mostly mobile Apps natively for android using Java and for both iOS and android using flutter. <p></p> I have a bit of experience with ionic, interestingly ionic was my first mobile development framework but it’s not my favourite.
+              I'm what you'd call a jack of all trade but my main area of interest and passion is mobile development. In my spare time I do mostly mobile Apps natively for android using Java and for both iOS and android using flutter. <p></p> I have a bit of experience with ionic, interestingly ionic was my first mobile development framework but it's not my favourite.
             </h6>
           </div>
           <div class="col-md-6">
@@ -397,7 +398,11 @@
           </ul>
           <hr class="ml-4 mr-4 footer-hr">
           <div class="footer-text text-center mt-6">
-            &copy; copyright <div class="footer-brand-name">NDX Code Pty Ltd</div> | All rights reserved.
+            &copy; 
+          <span id="copyright">
+              <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+          </span>
+            <div class="footer-brand-name">Ntobeko Dindi</div> | All rights reserved.
           </div>
       </section>
 
