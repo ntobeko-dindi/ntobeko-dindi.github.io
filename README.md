@@ -6,7 +6,7 @@ This is my website that outlines my skills
 You can [Mail Me](mailto:info@ntobeko-dindi.co.za?subject=[GitHub]%20Let's%20Work%20Together) Directly
 
 ```bash
-info@ntobeko-dindi.co.za
+info@ntobeko.com
 ```
 
 ## Contributing
