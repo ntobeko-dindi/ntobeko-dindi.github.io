@@ -87,13 +87,13 @@ $(document).ready(function () {
   });
 
   var progress = document.querySelectorAll(".progress-bar");
-  progress[0].setAttribute("style", "width:95%;transition:1s all");
-  progress[1].setAttribute("style", "width:92%;transition:1.5s all");
-  progress[2].setAttribute("style", "width:90%;transition:2s all");
-  progress[3].setAttribute("style", "width:83%;transition:2.5s all");
-  progress[4].setAttribute("style", "width:85%;transition:3.0s all");
-  progress[5].setAttribute("style", "width:97%;transition:3.5s all");
-  progress[6].setAttribute("style", "width:75%;transition:4.0s all");
+  progress[0].setAttribute("style", "width:100%;transition:1s all");
+  progress[1].setAttribute("style", "width:100%;transition:1.5s all");
+  progress[2].setAttribute("style", "width:100%;transition:2s all");
+  progress[3].setAttribute("style", "width:100%;transition:2.5s all");
+  progress[4].setAttribute("style", "width:100%;transition:3.0s all");
+  progress[5].setAttribute("style", "width:100%;transition:3.5s all");
+  progress[6].setAttribute("style", "width:100%;transition:4.0s all");
 
   $("a").on("click", function (event) {
     if (this.hash !== "") {
@@ -127,12 +127,12 @@ async function handleSubmit(event) {
       Accept: "application/json",
     },
   })
-    .then((response) => {
+    .then(() => {
       status.classList.add("success");
       status.innerHTML = "Thanks!";
       form.reset();
     })
-    .catch((error) => {
+    .catch(() => {
       status.classList.add("error");
       status.innerHTML = "Oops! There was a problem submitting your form";
     });
